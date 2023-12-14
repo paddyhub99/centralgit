@@ -15,7 +15,7 @@ pipeline{
           }
           stage ("checkout from scm"){
                 steps {
-                      git :branch 'main', credentialsId: 'github' , url: 'https://github.com/paddyhub99/Jenkins-Zero-To-Hero'
+                      git branch: 'main', credentialsId: 'github' , url: 'https://github.com/paddyhub99/Jenkins-Zero-To-Hero'
                 }
           }
           stage ("build application") {
